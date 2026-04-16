@@ -9,7 +9,7 @@ export default defineConfig({
       dark: "#6d28d9",
     },
   },
-  repo: "https://github.com/sourcey/symple-server",
+  repo: "https://github.com/nilstate/symple-server",
   editBranch: "main",
   editBasePath: "docs",
   navigation: {
@@ -48,13 +48,13 @@ export default defineConfig({
   },
   navbar: {
     links: [
-      { type: "github", href: "https://github.com/sourcey/symple-server" },
+      { type: "github", href: "https://github.com/nilstate/symple-server" },
       { type: "npm", href: "https://www.npmjs.com/package/symple-client" },
     ],
   },
   footer: {
     links: [
-      { type: "github", href: "https://github.com/sourcey/symple-server" },
+      { type: "github", href: "https://github.com/nilstate/symple-server" },
     ],
   },
 });
