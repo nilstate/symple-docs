@@ -4,12 +4,12 @@ export default defineConfig({
   name: "symple",
   theme: {
     colors: {
-      primary: "#4a90d9",
-      light: "#5ea0e9",
-      dark: "#3a7bc8",
+      primary: "#7c3aed",
+      light: "#8b5cf6",
+      dark: "#6d28d9",
     },
   },
-  repo: "https://github.com/nilstate/symple-docs",
+  repo: "https://github.com/sourcey/symple-server",
   editBranch: "main",
   editBasePath: "docs",
   navigation: {
@@ -24,7 +24,23 @@ export default defineConfig({
           },
           {
             group: "Protocol",
-            pages: ["protocol", "signalling"],
+            pages: ["protocol", "addressing", "presence"],
+          },
+          {
+            group: "Server",
+            pages: ["server", "authentication", "scaling"],
+          },
+          {
+            group: "Clients",
+            pages: ["javascript-client", "ruby-client", "cpp-client"],
+          },
+          {
+            group: "Media",
+            pages: ["webrtc-signalling", "call-manager", "media-players"],
+          },
+          {
+            group: "Deployment",
+            pages: ["configuration", "docker"],
           },
         ],
       },
@@ -32,12 +48,13 @@ export default defineConfig({
   },
   navbar: {
     links: [
-      { type: "github", href: "https://github.com/nilstate/symple-server" },
+      { type: "github", href: "https://github.com/sourcey/symple-server" },
+      { type: "npm", href: "https://www.npmjs.com/package/symple-client" },
     ],
   },
   footer: {
     links: [
-      { type: "github", href: "https://github.com/nilstate/symple-server" },
+      { type: "github", href: "https://github.com/sourcey/symple-server" },
     ],
   },
 });
