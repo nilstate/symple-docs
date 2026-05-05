@@ -35,22 +35,6 @@ jobs:
           npm ci
           npm run site:build
 
-      - name: Ensure Cloudflare Pages project exists
-        run: |
-          set -euo pipefail
-
-          if ! npx --yes wrangler@4 pages project list --json | node -e '
-            let input = "";
-            process.stdin.on("data", (chunk) => (input += chunk));
-            process.stdin.on("end", () => {
-              const projects = JSON.parse(input);
-              const exists = projects.some((project) => project.name === process.env.PAGES_PROJECT);
-              process.exit(exists ? 0 : 1);
-            });
-          '; then
-            npx --yes wrangler@4 pages project create "$PAGES_PROJECT" --production-branch "$PAGES_BRANCH"
-          fi
-
       - name: Deploy docs to Cloudflare Pages
         run: |
           set -euo pipefail
