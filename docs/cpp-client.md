@@ -22,7 +22,7 @@ The C++ and JavaScript implementations interoperate. A browser running symple-cl
 
 ## Where to find it
 
-The C++ symple module lives in the [icey](/icey) repository at `src/symple/`. Full API reference and module documentation is available in the [icey docs](/icey/docs/concepts/modules/symple.html).
+The C++ symple module lives in the [icey](/icey) repository at `src/symple/`. Full API reference and module documentation is available in the [icey docs](/icey/docs/concepts/modules/symple).
 
 ## Example: console client
 
@@ -71,6 +71,6 @@ This is how icey achieves camera-to-browser streaming in under 150 lines -- symp
 
 ## Further reading
 
-- [icey symple module guide](/icey/docs/concepts/modules/symple.html) -- full C++ API reference
-- [icey WebRTC module](/icey/docs/concepts/modules/webrtc.html) -- WebRTC integration
-- [icey architecture](/icey/docs/concepts/architecture.html) -- how modules compose
+- [icey symple module guide](/icey/docs/concepts/modules/symple) -- full C++ API reference
+- [icey WebRTC module](/icey/docs/concepts/modules/webrtc) -- WebRTC integration
+- [icey architecture](/icey/docs/concepts/architecture) -- how modules compose
