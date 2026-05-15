@@ -1,4 +1,4 @@
-import { defineConfig } from "sourcey";
+import { defineConfig, markdown } from "sourcey";
 
 export default defineConfig({
   name: "symple",
@@ -18,32 +18,34 @@ export default defineConfig({
       {
         tab: "Documentation",
         slug: "",
-        groups: [
-          {
-            group: "Getting Started",
-            pages: ["introduction", "quickstart"],
-          },
-          {
-            group: "Protocol",
-            pages: ["protocol", "addressing", "presence"],
-          },
-          {
-            group: "Server",
-            pages: ["server", "authentication", "scaling"],
-          },
-          {
-            group: "Clients",
-            pages: ["javascript-client", "ruby-client", "cpp-client"],
-          },
-          {
-            group: "Media",
-            pages: ["webrtc-signalling", "call-manager", "media-players"],
-          },
-          {
-            group: "Deployment",
-            pages: ["configuration", "docker"],
-          },
-        ],
+        source: markdown({
+          groups: [
+            {
+              group: "Getting Started",
+              pages: ["introduction", "quickstart"],
+            },
+            {
+              group: "Protocol",
+              pages: ["protocol", "addressing", "presence"],
+            },
+            {
+              group: "Server",
+              pages: ["server", "authentication", "scaling"],
+            },
+            {
+              group: "Clients",
+              pages: ["javascript-client", "ruby-client", "cpp-client"],
+            },
+            {
+              group: "Media",
+              pages: ["webrtc-signalling", "call-manager", "media-players"],
+            },
+            {
+              group: "Deployment",
+              pages: ["configuration", "docker"],
+            },
+          ],
+        }),
       },
     ],
   },
