@@ -10,7 +10,7 @@ export default defineConfig({
       dark: "#6d28d9",
     },
   },
-  repo: "https://github.com/nilstate/symple-server",
+  repo: "https://github.com/nilstate/symple-docs",
   editBranch: "main",
   editBasePath: "docs",
   navigation: {
@@ -30,7 +30,14 @@ export default defineConfig({
             },
             {
               group: "Server",
-              pages: ["server", "authentication", "scaling"],
+              pages: [
+                "server",
+                "authentication",
+                "scaling",
+                "api-server-lifecycle",
+                "api-routing-rooms",
+                "api-sessions-peer",
+              ],
             },
             {
               group: "Clients",
@@ -52,6 +59,7 @@ export default defineConfig({
   navbar: {
     links: [
       { type: "github", href: "https://github.com/nilstate/symple-server" },
+      { type: "link", label: "Docs source", href: "https://github.com/nilstate/symple-docs" },
       { type: "npm", href: "https://www.npmjs.com/package/symple-client" },
     ],
   },
